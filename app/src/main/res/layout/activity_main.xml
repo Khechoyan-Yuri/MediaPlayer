@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.yuri_khechoyan.hw6_mediaplayer.MainActivity">
+
+    <!--ImageView for the cover art name-->
+    <ImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="10dp" />
+
+    <!--TextView for the artist name-->
+    <TextView
+        android:id="@+id/tv_songname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Song Name"
+        android:textSize="25sp"
+        android:textColor="#ffffff"/>
+    <!--TextView for the artist name-->
+    <TextView
+        android:id="@+id/tv_artistname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Artist Name"
+        android:textSize="25sp"
+        android:textColor="#ffffff"/>
+    <!--Linear Layout for the buttons-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <!--Button for playing-->
+        <Button
+            android:id="@+id/btn_play"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Play"/>
+        <!--Button for Stoping-->
+        <Button
+            android:id="@+id/btn_stop"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Stop"/>
+        <!--Button for Pausing-->
+        <Button
+            android:id="@+id/btn_pause"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Pause"/>
+
+    </LinearLayout>
+</LinearLayout>
